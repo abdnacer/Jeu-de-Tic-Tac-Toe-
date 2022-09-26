@@ -182,10 +182,12 @@ function jouer(id) {
     localStorage.setItem(id, "X")
     choix = "O"
     sumButton++
+
     joueur1.style.background = null
     joueur1.style.color = "#000"
     joueur2.style.background = "#56baed"
     joueur2.style.color = "#fff"
+
     winner()
   }
   else if ((choix == "O") && (choixEl.innerHTML == "") && (whowinner == false)) {
@@ -193,14 +195,16 @@ function jouer(id) {
     localStorage.setItem(id, "O")
     choix = "X"
     sumButton++
+
     joueur2.style.background = null
     joueur2.style.color = "#000"
     joueur1.style.background = "#56baed"
     joueur1.style.color = "#fff"
+
     winner()
   }
 
-}
+} 
 
 // Condition Pour Game
 function winner() {
